@@ -1,0 +1,1 @@
+s-video ( also known as separate video and y/c ) s-video – definition about.com is a signaling standard for standard definition video , typically 480i or 576i . by separating the black-and-white and coloring signals , it achieves better image quality than composite video , but has lower color resolution than ypbpr . s-video was introduced with jvc 's s-vhs format in 1987 .

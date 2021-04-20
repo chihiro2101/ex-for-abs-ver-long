@@ -1,0 +1,1 @@
+chroma subsampling is the practice of encoding images by implementing less resolution for chroma information than for luma information , taking advantage of the human visual system 's lower acuity for color differences than for luminance . it is used in many video encoding schemes both analog and digital and also in jpeg encoding .

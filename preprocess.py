@@ -116,13 +116,10 @@ def simCos(vec1, vec2):
     norm_vec2 = normalize(vec2)
     return np.sum(norm_vec1 * norm_vec2)
 
-# S là dict của 1 câu, cần chuyển kích thước bằng vs dict của 1 document
-
 
 def sim_2_sent(df_tfidf):
     matrix_cossim = cosine_similarity(df_tfidf, df_tfidf)
     return matrix_cossim
-
 
 
 def sim_with_title(list_sentences_frequency, title):
@@ -141,7 +138,7 @@ def sim_with_doc(list_sentences_frequency, document_vector):
     return simWithDoc
 
 
-def count_noun(sentences, option = True):  # đếm số danh từ
+def count_noun(sentences, option = True):
     if option == False:
         number_of_nouns = [0]*len(sentences)
     else:

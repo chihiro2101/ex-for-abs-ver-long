@@ -1,0 +1,1 @@
+approximated that 57 % of the publicly reachable mail-servers on the internet ran exim .

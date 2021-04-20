@@ -1,0 +1,1 @@
+indirect fire is aiming and firing a projectile without relying on a direct line of sight between the gun and its target , as in the case of direct fire . aiming is performed by calculating azimuth and inclination , and may include correcting aim by observing the fall of shot and calculating new angles .

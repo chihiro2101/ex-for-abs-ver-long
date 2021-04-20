@@ -1,0 +1,1 @@
+image : adoption sfd ani s.gif thumb 327px dynamic stock and flow diagram of model new product adoption ( model from article by john sterman 2001 ) system dynamics ( sd ) is an approach to understanding the nonlinear behaviour of complex systems over time using stocks , flows , internal feedback loops , table functions and time delays .

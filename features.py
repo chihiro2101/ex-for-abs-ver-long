@@ -5,7 +5,7 @@ import numpy as np
 
 
 class METRIC(object):
-    def __init__(self, title, sentences, agent, simWithTitle, simWithDoc, sim2sents, number_of_nouns):
+    def __init__(self, title, sentences, agent, simWithTitle, simWithDoc, sim2sents, number_of_nouns, order_params):
         self.title = title
         self.sentences = sentences
         self.n = len(sentences)
@@ -15,6 +15,7 @@ class METRIC(object):
         self.sim2sents = sim2sents
         self.number_of_nouns = number_of_nouns
         self.sum_nouns = sum(number_of_nouns)
+        self.order_params = order_params
 
     # number of sentences in summary
     def O(self):
@@ -95,10 +96,34 @@ class METRIC(object):
         return len(words)
 
     def fitness(self):
-        rel = 0.35
-        cover = 0.3
-        le  = 0.35
-        fit = rel*self.relationT() + cover*self.Cov() + le*self.leng()
+        if self.order_params == 0:
+            rel = 0.35
+            cover = 0.3
+            le  = 0.35
+            fit = rel*self.relationT() + cover*self.Cov() + le*self.leng()
+        elif self.order_params == 1:
+            rel = 0.35
+            coh = 0.3
+            le  = 0.35
+            fit = rel*self.relationT() + coh*self.cohesion() + le*self.leng()
+        elif self.order_params == 2:
+            rel = 0.35
+            coh = 0.15
+            cover = 0.15
+            le  = 0.35
+            fit = rel*self.relationT() + coh*self.cohesion() + le*self.leng() + cover*self.Cov()  
+        elif self.order_params == 3:
+            rel = 0.3
+            coh = 0.2
+            cover = 0.2
+            le  = 0.3   
+            fit = rel*self.relationT() + coh*self.cohesion() + le*self.leng() + cover*self.Cov() 
+        else:
+            rel = 0.3
+            coh = 0.1
+            cover = 0.3
+            le  = 0.3      
+            fit = rel*self.relationT() + coh*self.cohesion() + le*self.leng() + cover*self.Cov()   
         return fit
 
     # def GLS(self):
@@ -120,8 +145,8 @@ class METRIC(object):
     #     return self.fitness() - gls
 
 
-def compute_fitness(title, sentences, agent, simWithTitle, simWithDoc, sim2sents, number_of_nouns):
+def compute_fitness(title, sentences, agent, simWithTitle, simWithDoc, sim2sents, number_of_nouns, order_params):
     metric = METRIC(title, sentences, agent, simWithTitle,
-                    simWithDoc, sim2sents, number_of_nouns)
+                    simWithDoc, sim2sents, number_of_nouns, order_params)
     # return metric.GLS()
     return metric.fitness()

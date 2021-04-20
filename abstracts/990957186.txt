@@ -1,0 +1,1 @@
+image : celesta.jpg thumb 100px right celesta invented .

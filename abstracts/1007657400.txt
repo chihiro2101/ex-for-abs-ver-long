@@ -1,0 +1,1 @@
+material exchange format ( mxf ) is a container format for professional digital video and audio media defined by a set of smpte standards . a typical example of its use is for delivering advertisements to tv stations and tapeless archiving of broadcast tv programs . it is also used as part of the digital cinema package for delivering movies to commercial theaters .

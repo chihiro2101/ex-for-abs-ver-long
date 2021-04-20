@@ -1,0 +1,1 @@
+this page lists ways to obtain and add geographic coordinates to articles . obtaining there are various ways to obtain geographic coordinates . note that regardless of the source of coordinates , it is a good practice to evaluate whether they appear reasonable at first glance .

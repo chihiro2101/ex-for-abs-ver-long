@@ -1,0 +1,1 @@
+a news server is a collection of software used to handle usenet articles . it may also refer to a computer itself which is primarily or solely used for handling usenet . access to usenet is only available through news server provider .

@@ -1,0 +1,1 @@
+atomic chess is a chess variant . standard rules of chess apply , but all captures result in an '' explosion '' through which all surrounding white and black pieces other than pawns are removed from play . some variations additionally remove rules concerning check such that the king may be able to move into or remain in check .

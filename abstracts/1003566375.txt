@@ -1,0 +1,1 @@
+the electric image animation system ( eias ) is a 3d computer graphics package published by eias3d . it currently runs on the macos and windows platforms .
