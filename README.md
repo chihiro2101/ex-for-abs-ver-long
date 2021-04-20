@@ -1,0 +1,3 @@
+# text_extract
+link paper
+https://www.researchgate.net/publication/260044470_Extractive_single-document_summarization_based_on_genetic_operators_and_guided_local_search#fullTextFileContent
