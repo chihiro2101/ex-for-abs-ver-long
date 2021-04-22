@@ -138,7 +138,7 @@ def sim_with_doc(list_sentences_frequency, document_vector):
     return simWithDoc
 
 
-def count_noun(sentences, option = True):
+def count_noun(sentences, option = False):
     if option == False:
         number_of_nouns = [0]*len(sentences)
     else:

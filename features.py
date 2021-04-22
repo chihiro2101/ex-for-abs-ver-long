@@ -14,7 +14,7 @@ class METRIC(object):
         self.simWithDoc = simWithDoc
         self.sim2sents = sim2sents
         self.number_of_nouns = number_of_nouns
-        self.sum_nouns = sum(number_of_nouns)
+        # self.sum_nouns = sum(number_of_nouns)
         self.order_params = order_params
 
     # number of sentences in summary

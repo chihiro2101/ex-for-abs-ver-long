@@ -381,7 +381,8 @@ def start_run(processID, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, sub_storie
         document_vector = dense_doc.tolist()[0]
 
         list_sentences_frequencies = denselist[:-1]
-        number_of_nouns = count_noun(preprocessed_sentences, option= False)
+        # number_of_nouns = count_noun(preprocessed_sentences, option = True)
+        number_of_nouns = 0
         simWithTitle = sim_with_title(list_sentences_frequencies, title_vector)
         sim2sents = sim_2_sent(list_sentences_frequencies)
         simWithDoc = sim_with_doc(list_sentences_frequencies, document_vector)
