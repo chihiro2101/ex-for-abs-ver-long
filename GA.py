@@ -46,7 +46,10 @@ class Summerizer(object):
         population = []
         for i in range(amount):
             agent = np.zeros(self.num_objects)
-            agent[np.random.choice(list(range(self.num_objects)), self.num_picked_sents, replace=False)] = 1
+            try:
+                agent[np.random.choice(list(range(self.num_objects)), self.num_picked_sents, replace=False)] = 1
+            except:
+                agent[np.random.choice(list(range(self.num_objects)), self.num_picked_sents, replace=True)] = 1
             agent = agent.tolist()
             fitness = compute_fitness(self.title, self.sentences, agent, self.simWithTitle, self.simWithDoc, self.sim2sents, self.number_of_nouns, self.order_params)
             population.append((agent, fitness))
