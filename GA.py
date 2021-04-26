@@ -365,6 +365,9 @@ def start_run(processID, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, sub_storie
         for raw_sent in raw_sentences:
             preprocessed_sent = preprocess_raw_sent(raw_sent)
             preprocessed_sentences.append(preprocessed_sent)
+
+        if len(preprocessed_sentences) < 7:
+            continue
             
         #tfidf for sentences 
         bodyandtitle = preprocessed_sentences.copy()
