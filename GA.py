@@ -259,7 +259,7 @@ class Summerizer(object):
     
         while count < self.max_generation or self.check_best(tmp_arr) == True:
             population = self.selection(population)
-            best_individual = sorted(population, key=lambda x: x[1], reverse=True)[1]
+            best_individual = sorted(population, key=lambda x: x[1], reverse=True)[0]
             best_fitness_value = best_individual[1]  
             tmp_arr.append(best_fitness_value)          
             count +=1
